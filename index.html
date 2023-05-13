@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/style2.css">
+    <link rel="stylesheet" href="./asset/css/materialize.css">
     <title>Contenido en desarrollo</title>
 </head>
+
 <body>
-    <div>
-        <h1>👷‍♀️🚧Contenido en desarrollo.🚧👷‍♀️</h1>
-    </div>
+    <header>
+        <nav class="navbar-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Club Pastelero</label>
+            <ul class="nav-options">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section_Recetas">Recetas</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <img src="./asset/img/fondo_5.png" alt="cliente1">
+                <div class="banner-text">
+                    <h2>Club Pastelero</h2>
+                    <p> Bienvenido a nuestro <b>CLUB PASTELERO</b>, el propósito de nuestro negocio es
+                        brindarte la oportunidad de que desarrolles e incrementes tu pasión por la repostería.
+                        Tenemos para ti recetas exclusivas de pasteles y postres, los cuales podrás preparar
+                        guiado(a) de la mano de nuestros expertos chef pasteleros.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="section_Recetas">
+        <div class="container">
+            <h1 class="titulo titulo-seccion">Nuestras recetas</h1>
+            <p class="descripcion-seccion">Sorprende tus invitados con estas deliciosas recetas, saludables y
+                fáciles de realizar </p>
+            <div class="container-carrusel">
+                <div class="carousel">
+
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_1.jpg" alt="">
+                        <p class="receta" id="receta_1" onclick="rec_1()">BROWNIE RELLENO</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_2.jpg" alt="">
+                        <p class="receta" onclick="rec_2()">PASTEL DE MANZANA</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_3.jpg" alt="">
+                        <p class="receta" onclick="rec_3()">SORBETE DE MANGO</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_4.jpg" alt="">
+                        <p class="receta" onclick="rec_4()"> ROCAS DE CHOCOLATE</p>
+                    </div>
+                </div>
+            </div>
+            <div><br> <br></div>
+
+    </section>
+
+    <!-- <footer>
+
+    </footer> -->
+    <script src="https://kit.fontawesome.com/ed8182e24d.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/home.js"></script>
+    <script src="./asset/js/materialize.js"></script>`
 </body>
+
 </html>
