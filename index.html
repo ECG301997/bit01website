@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./asset/css/materialize.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Contenido en desarrollo</title>
 </head>
@@ -24,8 +23,8 @@
             <ul class="nav-options">
                 <li><a href="#">Home</a></li>
                 <li><a href="#section_Recetas">Recetas</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +32,7 @@
     <main>
         <section class="banner">
             <div class="banner-content">
-                <img src="./asset/img/fondo_5.png" alt="cliente1">
+                <img src="./asset/img/fondo.png" alt="cliente1">
                 <div class="banner-text">
                     <h2>Club Pastelero</h2>
                     <p> Bienvenido a nuestro <b>CLUB PASTELERO</b>, el propósito de nuestro negocio es
@@ -69,6 +68,56 @@
                     </div>
                 </div>
             </div>
+    </section>
+
+    <section class="testimonios" id="clientes">
+        <div class="testimonios-content">
+            <h2>Clientes</h2>
+            <p>Nuestros clientes nos respaldan.</p>
+            <div class="testimonios-group">
+                <div class="testimonios-card">
+                    <img src="./asset/img/andrea.jpg" alt="Andrea Restrepo" class="img-perfil">
+                    <h3>Andrea Lee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta delectus voluptate dolorem
+                        temporibus ad culpa, reiciendis deserunt architecto repellendus.</p>
+                </div>
+                <div class="testimonios-card">
+                    <img src="./asset/img/sergio.jpg" alt="Sergio Ortiz" class="img-perfil">
+                    <h3>Sergio Ortiz</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta delectus voluptate dolorem
+                        temporibus ad culpa, reiciendis deserunt architecto repellendus.</p>
+                </div>
+                <div class="testimonios-card">
+                    <img src="./asset/img/laura.jpg" alt="Laura Vanegas" class="img-perfil">
+                    <h3>Laura Vanegas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta delectus voluptate dolorem
+                        temporibus ad culpa, reiciendis deserunt architecto repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contacto-content">
+            <h2>Contactanos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora, odio expedita eius assumenda
+                voluptates tempore suscipit aperiam.</p>
+                <div class="contacto-group">
+                    <form action="" class="form-contact">
+                        <div>
+                            <input type="text" placeholder="Nombre" class="form-control">
+                            <input type="text" placeholder="Apellidos" class="form-control">
+                            <input type="email" placeholder="Correo" class="form-control">
+                            <input type="number" placeholder="Celular" class="form-control">
+                        </div>
+                        <textarea rows="5" class="form-control" placeholder="Dejanos tus comentarios"></textarea>
+                        <input type="submit" name="" class="send-btn">
+                    </form>
+                </div>
+                <div class="contacto-img">
+                    <img src="./asset/img/contacto.svg" alt="contacto">
+                </div>
+        </div>
     </section>
 
     <!-- <footer>
