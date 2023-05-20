@@ -1,14 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenido en desarrollo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Club pastelero</title>
 </head>
+
 <body>
-    <div>
-        <h1>👷‍♀️🚧Contenido en desarrollo.🚧👷‍♀️</h1>
-    </div>
+    <header>
+        <nav class="navbar-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Club Pastelero</label>
+            <ul class="nav-options">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section_Recetas">Recetas</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <img src="./asset/img/fondo.png" alt="cliente1">
+                <div class="banner-text">
+                    <h2>Club Pastelero</h2>
+                    <p> Bienvenido a nuestro <b>CLUB PASTELERO</b>, el propósito de nuestro negocio es
+                        brindarte la oportunidad de que desarrolles e incrementes tu pasión por la repostería.
+                        Tenemos para ti recetas exclusivas de pasteles y postres, los cuales podrás preparar
+                        guiado(a) de la mano de nuestros expertos chef pasteleros.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="section_Recetas">
+        <div class="container">
+            <h1 class="titulo titulo-seccion">Nuestras recetas</h1>
+            <p class="descripcion-seccion">Sorprende tus invitados con estas deliciosas recetas fáciles de realizar </p>
+            <div class="container-carrusel">
+                <div class="carousel">
+
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_1.jpg" alt="">
+                        <p class="receta" id="receta_1" onclick="rec_1()">BROWNIE RELLENO</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_2.jpg" alt="">
+                        <p class="receta" onclick="rec_2()">PASTEL DE MANZANA</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_3.jpg" alt="">
+                        <p class="receta" onclick="rec_3()">SORBETE DE MANGO</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/recetas/receta_4.jpg" alt="">
+                        <p class="receta" onclick="rec_4()"> ROCAS DE CHOCOLATE</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="testimonios" id="clientes">
+        <div class="testimonios-content">
+            <h2>Clientes</h2>
+            <p>Nuestros clientes nos respaldan.</p>
+            <div class="testimonios-group">
+                <div class="testimonios-card">
+                    <img src="./asset/img/andrea.jpg" alt="Andrea Restrepo" class="img-perfil">
+                    <h3>Andrea Lee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta delectus voluptate dolorem
+                        temporibus ad culpa, reiciendis deserunt architecto repellendus.</p>
+                </div>
+                <div class="testimonios-card">
+                    <img src="./asset/img/sergio.jpg" alt="Sergio Ortiz" class="img-perfil">
+                    <h3>Sergio Ortiz</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta delectus voluptate dolorem
+                        temporibus ad culpa, reiciendis deserunt architecto repellendus.</p>
+                </div>
+                <div class="testimonios-card">
+                    <img src="./asset/img/laura.jpg" alt="Laura Vanegas" class="img-perfil">
+                    <h3>Laura Vanegas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta delectus voluptate dolorem
+                        temporibus ad culpa, reiciendis deserunt architecto repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contacto-content">
+            <h2>Contactanos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora, odio expedita eius assumenda
+                voluptates tempore suscipit aperiam.</p>
+                <div class="contacto-group">
+                    <form action="" class="form-contact">
+                        <div>
+                            <input type="text" placeholder="Nombre" id="nombre" class="form-control">
+                            <p id="name"></p>
+                            <input type="text" placeholder="Apellidos" id="apellido" class="form-control">
+                            <p id="surname"></p>
+                            <input type="email" placeholder="Correo" id="correo" class="form-control">
+                            <p id="email"></p>
+                            <input type="number" placeholder="Celular" id="celular" class="form-control">
+                            <p id="phone"></p>
+                        </div>
+                        <textarea rows="5" class="form-control" placeholder="Dejanos tus comentarios"></textarea>
+                        <input type="submit" id="aceptar" name="" class="send-btn">
+                    </form>
+                </div>
+                <div class="contacto-img">
+                    <img src="./asset/img/contacto.svg" alt="contacto">
+                </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/ed8182e24d.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/index.js"></script>
+    <script src="./asset/js/home.js"></script>
+    <script src="./asset/js/materialize.js"></script>`
 </body>
+
 </html>
