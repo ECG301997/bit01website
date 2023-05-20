@@ -606,7 +606,7 @@ section{
     }
   } */
   
-  /* @media screen and (max-width: 320px) {
+  @media screen and (max-width: 320px) {
     #section_Recetas {
       min-height: 100vh;
       background-image: linear-gradient(-30deg, #747474 50%, #d484bf 50%);
@@ -673,8 +673,8 @@ section{
       background: black;
     }
   }
-   */
-/* 
+  
+
   @media screen and (max-width: 540px) {
 
     .carousel {
@@ -707,9 +707,9 @@ section{
       background: black;
     }
   }
-   */
+  
 
-/* @media(max-width:1024px){
+@media(max-width:1024px){
 
     .logo{
         padding-left: 40px;
@@ -801,4 +801,4 @@ section{
       width:100%;
       margin-bottom:20px;
     }
-} */
+}

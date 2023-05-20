@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style.css">
-    <title>Contenido en desarrollo</title>
+    <title>Club pastelero</title>
 </head>
 
 <body>
@@ -105,13 +105,17 @@
                 <div class="contacto-group">
                     <form action="" class="form-contact">
                         <div>
-                            <input type="text" placeholder="Nombre" class="form-control">
-                            <input type="text" placeholder="Apellidos" class="form-control">
-                            <input type="email" placeholder="Correo" class="form-control">
-                            <input type="number" placeholder="Celular" class="form-control">
+                            <input type="text" placeholder="Nombre" id="nombre" class="form-control">
+                            <p id="name"></p>
+                            <input type="text" placeholder="Apellidos" id="apellido" class="form-control">
+                            <p id="surname"></p>
+                            <input type="email" placeholder="Correo" id="correo" class="form-control">
+                            <p id="email"></p>
+                            <input type="number" placeholder="Celular" id="celular" class="form-control">
+                            <p id="phone"></p>
                         </div>
                         <textarea rows="5" class="form-control" placeholder="Dejanos tus comentarios"></textarea>
-                        <input type="submit" name="" class="send-btn">
+                        <input type="submit" id="aceptar" name="" class="send-btn">
                     </form>
                 </div>
                 <div class="contacto-img">
@@ -120,10 +124,8 @@
         </div>
     </section>
 
-    <!-- <footer>
-
-    </footer> -->
     <script src="https://kit.fontawesome.com/ed8182e24d.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/index.js"></script>
     <script src="./asset/js/home.js"></script>
     <script src="./asset/js/materialize.js"></script>`
 </body>
