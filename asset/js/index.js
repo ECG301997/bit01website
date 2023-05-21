@@ -1,6 +1,5 @@
 'use strict'
 
-
 const nombre = document.getElementById('nombre');
 const apellido = document.getElementById('apellido');
 const correo = document.getElementById('correo');
@@ -17,5 +16,4 @@ const empty = () =>{
     }
 }
 
-const onSubmit =
-aceptar.addEventListener('click',)
+
