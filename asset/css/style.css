@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
+  user-select: none;
 }
 
 html {
@@ -376,8 +377,8 @@ a {
 
 
 .carousel .carousel-item>img {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   padding: 30px;
 }
 
@@ -469,8 +470,8 @@ h4 {
 
 
 .img-perfil {
-  width: 180px;
-  height: 180px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   border: 3px solid #FFF;
 }
@@ -512,10 +513,10 @@ h4 {
 
 .form-control {
   width: 85%;
-  padding: 0.4rem;
-  margin: 0.3rem 0.5rem;
+  padding: 0.8rem;
+  margin: 0.6rem 1rem;
   display: block;
-  font-size: 0.5rem;
+  font-size: 1rem;
   outline: 0;
   border-radius: 5px;
   border: 1.5px solid #2f6df3;
@@ -544,6 +545,42 @@ h4 {
 .contacto-img img {
   width: 45%;
   display: block;
+}
+
+
+
+.ed-modal-container {
+  background: #000;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  left: 0;
+}
+
+.ed-modal-container::before {
+  content: "X";
+  color: #fff;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  font-size: 1.5em;
+  opacity: .5;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.ed-modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.ed-modal-content img{
+  width: 100%;
 }
 
 @media screen and (max-width:1280px) {

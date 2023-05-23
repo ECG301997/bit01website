@@ -44,7 +44,59 @@ const resp = {
 }
 
 
-nombre.addEventListener('input', (e) => {
+// VENTANA MODAL
+
+// Crear elementos con atributos e hijo
+const createCustomElement = (element, attributes, children) => {
+    let customElement = document.createElement(element);
+    if (children !== undefined) children.forEach(el => {
+      if (el.nodeType) {
+        if (el.nodeType === 1 || el.nodeType === 11) customElement.appendChild(el);
+      } else {
+        customElement.innerHTML += el;
+      }
+    });
+    addAttributes(customElement, attributes);
+    return customElement;
+  };
+
+  // Añadir un objeto de atributos a un elemento
+  const addAttributes = (element, attrObj) => {
+    for (let attr in attrObj) {
+      if (attrObj.hasOwnProperty(attr)) element.setAttribute(attr, attrObj[attr])
+    }
+  };
+
+
+  // imprimir modal
+
+  const printModal = content => {
+    // crear contenedor interno
+    const modalContentEl = createCustomElement('div', {
+      id: 'ed-modal-content',
+      class: 'ed-modal-content'
+    }, [content]),
+      // crear contenedor principal
+      modalContainerEl = createCustomElement('div', {
+        id: 'ed-modal-container',
+        class: 'ed-modal-container'
+      }, [modalContentEl]);
+    // imprimir el modal
+    document.body.appendChild(modalContainerEl);
+
+    // Remover el modal
+    const removeModal = () =>
+      document.body.removeChild(modalContainerEl);
+    modalContainerEl.addEventListener('click', e => {
+      if(e.target === modalContainerEl){
+        removeModal();
+      }
+    })
+
+  }
+
+
+nombre.addEventListener('input',(e) =>{
     form.nombre = e.target.value;
 })
 
@@ -127,8 +179,9 @@ const validations = () => {
     let telefono = validationPhone();
     let comentarios = validationComents();
     if (nombre && apellido && correo && telefono && comentarios) {
-        alert('registrado correctamente');
         console.log(form)
+        printModal(`<img src='../asset/img/registro.png'>`)
+        cleanForm();
     }
 }
 
@@ -145,5 +198,5 @@ const cleanForm = ()=>{
 aceptar.addEventListener('click', (e) => {
     e.preventDefault();
     validations();
-    cleanForm();
+
 })
