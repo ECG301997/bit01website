@@ -181,10 +181,9 @@ const validations = () => {
     if (nombre && apellido && correo && telefono && comentarios) {
         console.log(form)
         printModal(`<img src='../asset/img/registro.png'>`)
-        cleanForm();
     }
 }
-
+// BORRAR LOS DATOS DEL FORMULARIO --- REVISAR SIGUE IMPRIMIENDO EL MODAL LINEA 183
 const cleanForm = ()=>{
     nombre.value = '';
     apellido.value = '';
@@ -198,5 +197,7 @@ const cleanForm = ()=>{
 aceptar.addEventListener('click', (e) => {
     e.preventDefault();
     validations();
-
+    setTimeout(()=>{
+        cleanForm();
+    },1000)
 })

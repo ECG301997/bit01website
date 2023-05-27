@@ -138,17 +138,10 @@ section {
 
 .banner-text h2 {
   font-size: 100px;
+  color: var(--cafe-bg-color)
 }
 
-.banner-text a {
-  display: block;
-  width: 100px;
-  color: #101010;
-  text-decoration: none;
-  padding: 7px;
-  margin-top: 10px;
-  border: 3px solid;
-}
+
 
 .banner-text a:hover {
   background-color: #F5F2F2;
@@ -163,8 +156,8 @@ a {
 }
 
 #section_Recetas {
-  height: 100%;
-  background-image: linear-gradient(-30deg, #83817e 50%, #e3ddd9 70%);
+  height: 100vh;
+  background-image: linear-gradient(-45deg, #a2927a6e 30%, #ffecb99f 60%);
   font-family: "Raleway", sans-serif;
   background-size: 100% 100%;
   /* clip-path: polygon(0.0% 78.35531444222059%, 0.8059381231705752% 79.16664910987043%, 1.6118412613263986% 79.97313810175919%, 2.4176744294527177% 80.76993574212578%, 3.223414304206365% 81.55240703676392%, 4.029014238901004% 82.31549562835774%, 4.834439248521884% 83.05446118192353%, 5.639666009725834% 83.76456336247762%, 6.444659537498104% 84.44085115348152%, 7.2493848468239435% 85.07858421995155%, 8.053795291017014% 85.67291688612661%, 8.857879208405734% 86.21910881702307%, 9.66157829063218% 86.71220899610239%, 10.46488087602477% 87.1473717476035%, 11.267740317897168% 87.51996207732013%, 12.07012163123462% 87.8250289687138%, 12.872001492693963% 88.0578320868008%, 13.673333255588856% 88.21342041504266%, 14.474093596576132% 88.2870536184557%, 15.274247530641041% 88.27388602127884%, 16.249991253746312% 88.1332560834299%, 16.872596237944748% 87.96871378910777%, 17.670767687840378% 87.67323290845886%, 18.468309407470468% 87.28621089223638%, 19.265256381849778% 86.81080796376277%, 20.06162027264988% 86.25050036869271%, 20.857436064885544% 85.60844833034868%, 21.652738743571504% 84.8879174128305%, 22.447563293722524% 84.0923838617929%, 23.24192137701018% 83.22500790055831%, 24.035847978449233% 82.289160434004%, 24.829378083054426% 81.28810702622985%, 25.62253501416893% 80.22511324133572%, 26.4153537568075% 79.1036553249763%, 27.207857634313303% 77.92678815969663%, 28.00008163170109% 76.69798799115138%, 28.792049072314025% 75.42052038344043%, 29.583783279495286% 74.09765090066365%, 30.375330899931196% 72.7326451069209%, 31.166703595293356% 71.32897924786684%, 31.957948012268076% 69.88981354682397%, 32.74907581252697% 68.41841356789213%, 33.540121981084766% 66.9181502159486%, 34.331121502956236% 65.39239439587064%, 35.122097701484535% 63.84430633098072%, 35.913073900012826% 62.27736226693354%, 36.70409674522747% 60.69472242705151%, 37.495177898800016% 59.09965237543453%, 38.286352345745236% 57.49562835773728%, 39.07765507107789% 55.88581059728221%, 39.86910939814113% 54.27346465816918%, 40.66075031194972% 52.66206678605288%, 41.45258947417523% 51.05488254503319%, 42.244673531504006% 49.455072158432536%, 43.037025807279214% 47.8660065311282%, 43.82966962484402% 46.29105656799748%, 44.622651630884775% 44.73348783314021%, 45.415983487073035% 43.19656589065628%, 46.209700178423574% 41.68355630464553%, 47.003836689951136% 40.19793532076267%, 47.79840468332731% 38.74275782155273%, 48.59345080523842% 37.32160539344781%, 49.38899837902765% 35.93753291899294%, 50.18507072803815% 34.594016643842835%, 50.98171449895628% 33.294216791319926%, 51.49997084582104% 32.47424417992205%, 52.576762953201715% 30.838512588222898%, 53.37516763652902% 29.686611187190564%, 54.174155403435535% 28.587274834088277%, 54.973702930578064% 27.541767618245032%, 55.77379855628506% 26.55177499209944%, 56.574418957213325% 25.6184557042031%, 57.37556413336288% 24.74328452543982%, 58.17721076139054% 23.927736226693355%, 58.97934717962473% 23.17318023807016%, 59.78196172639386% 22.48109133045402%, 60.58504274002635% 21.852628252396514%, 61.38856689717904% 21.28947645633626%, 62.19253419785191% 20.792900031602244%, 62.996909657030244% 20.36437374907827%, 63.80170493638558% 20.005267038870755%, 64.6068850509032% 19.71694933108607%, 65.4124383389115% 19.50089539660803%, 66.2183648004105% 19.358474665543042%, 67.024641112057% 19.291161908774896%, 67.83124395050787% 19.30032655641%, 68.63818497743466% 19.387232697777307%, 69.44542920782266% 19.55346044453809%, 69.91661904817437% 19.687664594964716%, 71.06066401558% 20.129779837775203%, 71.86829308113025% 20.543453070683668%, 72.67557229653299% 21.043716422627213%, 73.48225676668494% 21.63246602759928%, 74.28808993481125% 22.311808701148223%, 75.09279192079393% 23.083851258822307%, 75.89611782952967% 23.950595175392394%, 76.69781110424368% 24.91404192562942%, 77.49760352648948% 25.976509006636476%, 78.29523853949225% 27.139787211629624%, 79.09045958647714% 28.405983356157165%, 79.88301011066928% 29.777309596544825%, 80.67262189362224% 31.255767407563468%, 81.45903837856119% 32.84325292320658%, 82.24200300871127% 34.541978299799865%, 83.02124756562606% 36.35405035289161%, 84.16661030192068% 39.24670810070579%, 84.56758521766511% 40.32602970609924%, 85.33441009434291% 42.48572632466028%, 86.09722335599585% 44.7545559886232%, 86.85623491271238% 47.12651427367535%, 87.61167799792423% 49.595491414726645%, 88.36377418339146% 52.15548298746445%, 89.11274504087416% 54.80027388602128%, 89.85881214213246% 57.5239650268619%, 90.60220872059801% 60.32044664489624%, 91.34314468635935% 63.18360897503423%, 92.08185327284812% 66.10744759296324%, 92.81855605182447% 69.0859580743706%, 93.55346293337688% 72.1128199726114%, 94.28680715093702% 75.18223954492784%, 95.01882193793658% 78.28800168545244%, 95.74971720446409% 81.42410196987254%, 96.47971452227962% 84.58443063309807%, 97.20904712481487% 87.7630885915938%, 97.93793658382992% 90.95375539871485%, 99.9999300299705% 100.0%, 99.9999300299705% 0.005161698093331779%, 0.0% 0.005161698093331779%); */
@@ -302,7 +295,7 @@ a {
 #section_Recetas .receta {
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   font-size: 22px;
   text-align: center;
   font-family: "Luckiest Guy", sans-serif;
@@ -320,7 +313,7 @@ a {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 95vh;
+  height: 75vh;
   -webkit-perspective: 500px;
   perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -377,8 +370,8 @@ a {
 
 
 .carousel .carousel-item>img {
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   padding: 30px;
 }
 
@@ -418,7 +411,7 @@ a {
   background-image: url(../img/fondo_4.png);
   background-size: cover;
   background-attachment: fixed;
-  color: #F5F2F2;
+  color: var(--cafe-bg-color);
 }
 
 .testimonios-content {
@@ -479,12 +472,12 @@ h4 {
 .contacto {
   height: 95vh;
   position: relative;
+  background-color: #5ac3e3;
 }
 
 .contacto-content {
   width: 100%;
   height: 70vh;
-  padding: 100px 0;
   text-align: center;
 }
 
@@ -583,7 +576,7 @@ h4 {
   width: 100%;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1024px) {
 
   .banner {
     width: 100%;
@@ -605,27 +598,21 @@ h4 {
     position: absolute;
     color: #151414;
     top: 50%;
-    left: 45%;
+    left: 150px;
     transform: translateX(0%) translateY(-45%);
   }
 
   .banner-text h2 {
-    font-size: 80px;
-  }
-
-  .banner-text a {
-    display: block;
-    width: 80px;
-    color: #101010;
-    text-decoration: none;
-    padding: 7px;
-    margin-top: 3px;
-    border: 3px solid;
+    font-size: 70px;
+    text-align: center;
   }
 
   .banner-text p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    text-align: justify;
+    padding: 50px;
+    margin-right: 50px;
   }
 
 
@@ -665,8 +652,8 @@ h4 {
 
 
   .carousel .carousel-item>img {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     padding: 5px;
   }
 
@@ -710,24 +697,23 @@ h4 {
     background-image: url(../img/fondo_4.png);
     background-size: cover;
     background-attachment: fixed;
-    color: #F5F2F2;
   }
 
   .testimonios-content {
     width: 100%;
-    height: 80%;
-    padding: 10px 0;
+    height: 100%;
+    padding: 200px 0;
     text-align: center;
   }
 
   .testimonios-content h2 {
-    font-size: 30px;
+    font-size: 50px;
     color: black;
     font-weight: bold;
   }
 
   .testimonios-content h3 {
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
   }
 
@@ -736,6 +722,7 @@ h4 {
   h4 {
     color: black;
     font-weight: bold;
+    font-size: 20px;
 
   }
 
@@ -757,8 +744,8 @@ h4 {
 
 
   .img-perfil {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 3px solid #FFF;
   }
@@ -769,9 +756,11 @@ h4 {
 
   .contacto-content {
     width: 100%;
-    height: 80vh;
-    padding: 50px 0;
+    height: 70vh;
+    padding: 100px 0;
     text-align: center;
+    background-color: #7c8c92b7;
+
   }
 
   .contacto-content h2 {
@@ -782,6 +771,10 @@ h4 {
   .contacto-content p,
   .contacto-content h2 {
     padding: 5px 15px;
+  }
+
+  .contacto-content p{
+    font-size:20px;
   }
 
   .contacto-group {
@@ -835,159 +828,6 @@ h4 {
   }
 }
 
-@media screen and (max-width:860px) {
-
-  .banner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: blue;
-  }
-
-  .banner-content {
-    width: 100vw;
-  }
-
-  .banner-content img {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .banner-text {
-    position: absolute;
-    color: #151414;
-    top: 50%;
-    left: 45%;
-    transform: translateX(0%) translateY(-45%);
-  }
-
-  .banner-text h2 {
-    font-size: 80px;
-  }
-
-  .banner-text a {
-    display: block;
-    width: 80px;
-    color: #101010;
-    text-decoration: none;
-    padding: 7px;
-    margin-top: 3px;
-    border: 3px solid;
-  }
-
-  .banner-text p {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .testimonios {
-    height: 100vh;
-    position: relative;
-    background-image: url(../img/fondo_4.png);
-    background-size: cover;
-    background-attachment: fixed;
-    color: #F5F2F2;
-  }
-
-  .testimonios-content {
-    width: 100%;
-    height: 90%;
-    padding: 30px 0;
-    text-align: center;
-  }
-
-  .testimonios-content h2 {
-    margin-top: 20px;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-  }
-
-  .testimonios-content h3 {
-    font-size: 10px;
-    text-transform: uppercase;
-  }
-
-
-  .testimonios-content p,
-  h4 {
-    color: black;
-    font-weight: bold;
-
-  }
-
-  .testimonios-content h4 {
-    font-size: 20px;
-  }
-
-  .testimonios-group {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 30px;
-    padding: 0 30px;
-  }
-
-  .img-perfil {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid #FFF;
-  }
-
-  .contacto{
-    height: 90vh;
-  }
-
-  .contacto-group {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 20px;
-    padding: 0 30px;
-  }
-
-
-  .form-contact {
-    width: 50%;
-    float: left;
-  }
-
-  .form-control {
-    width: 85%;
-    padding: 0.3rem;
-    margin: 0.4rem 0.7rem;
-    display: block;
-    font-size: 0.7rem;
-    outline: 0;
-    border-radius: 5px;
-    border: 1.5px solid #2f6df3;
-  }
-
-  .send-btn {
-    display: block;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background: #80b827;
-    color: #FFF;
-    border: none;
-    padding: 0.3rem 0.5rem;
-    margin: 0.3rem 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-  }
-
-  .contacto-img {
-    margin-top: 10%;
-    width: 45%;
-    float: left;
-  }
-
-  .contacto-img img {
-    margin-left: 100px;
-    width: 60%;
-    display: block;
-  }
-}
 
 @media screen and (max-width: 768px) {
 
@@ -1042,11 +882,11 @@ h4 {
   }
 
   .banner p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .testimonios {
-    height: 110vh;
+    height: 180vh;
   }
 
   .testimonios-card {
@@ -1055,24 +895,6 @@ h4 {
   }
 
   
-}
-
-@media screen and (max-width: 570px) {
-
-
-  .carousel {
-    min-height: 100px;
-  }
-
-  .carousel .carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    width: 300px;
-    height: 300px;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1103,8 +925,8 @@ section {
 .banner-text {
   position: absolute;
   color: #151414;
-  top: 45%;
-  left: 20%;
+  top: 55%;
+  left: 5%;
   transform: translateX(0%) translateY(-45%);
 }
 
@@ -1113,14 +935,19 @@ section {
 }
 
 .banner-text p{
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
 
 }
 
+#section_Recetas{
+  width: 100%;
+  height: 52vh;
+}
+
 #section_Recetas .receta {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   margin-bottom: 10px;
   font-size: 14px;
   text-align: center;
@@ -1135,13 +962,32 @@ section {
 }
 
 /* estilos materialize carousel*/
+
+.titulo-seccion{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.descripcion-seccion{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-carrusel{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
 .carousel {
+  margin-top:-230px;
+  margin-left: -25px;
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 75vh;
   -webkit-perspective: 500px;
-  perspective: 500px;
+  perspective: 100px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform-origin: 10% 50%;
@@ -1155,8 +1001,8 @@ section {
   align-items: center;
   user-select: none;
   visibility: hidden;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   left: 0;
 }
@@ -1166,38 +1012,25 @@ section {
   top: 0;
   left: 0;
   height: 100%;
-  min-height: 50px;
+  min-height: 100px;
   position: absolute;
 }
-
-.carousel .carousel-fixed-item {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 20px;
-  z-index: 1;
-}
-
-.carousel.carousel-fixed-item.with-indicators {
-  bottom:100px;
-}
-
 
 .carousel.carousel-slider .carousel-item h2 {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 32px;
 }
 
 .carousel .carousel-slider .carousel-item p {
-  font-size: 10px;
+  font-size: 0px;
 }
 
 
 
 .carousel .carousel-item>img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   padding: 10px;
 }
 
@@ -1206,29 +1039,36 @@ section {
   text-align: center;
   left: 0;
   right: 0;
-  bottom: 100px;
+  bottom:140px;
 }
 
 .carousel .indicators .indicator-item {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  height: 8px;
-  width: 8px;
   margin: 50px 10px;
-  background-color: rgb(88, 168, 34);
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-  border-radius: 50%;
 }
 
 .testimonios {
-  height: 150vh;
+  height: 250vh;
   position: relative;
   background-image: url(../img/fondo_4.png);
   background-size: cover;
   background-attachment: fixed;
-  color: #F5F2F2;
+}
+
+.contacto-content{
+  width: 100%;
+  height: 55vh;
+}
+
+.contacto-content p{
+  font-size:10px
+}
+
+.form-contact{
+  width: 100%;
+}
+
+.contacto-img{
+  width: 0px;
 }
 
 }
