@@ -5,12 +5,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
   user-select: none;
 }
+
+body{
+  background-color: #7c8c92b7;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -28,26 +33,6 @@ html {
 }
 
 /*____________ general _______________*/
-
-.titulo-seccion {
-  font-size: 50px;
-  font-family: "Nunito Sans", sans-serif;
-
-  color: var(--cafe-bg-color);
-  user-select: none;
-  text-align: center;
-  padding-top: 70px;
-}
-
-.descripcion-seccion {
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 10px;
-  user-select: none;
-  max-width: 900px;
-  margin: auto;
-}
-
 nav {
   position: relative;
   z-index: 1;
@@ -110,10 +95,6 @@ a:hover {
 
 #check {
   display: none;
-}
-
-section {
-  width: 100%;
 }
 
 .banner {
@@ -307,6 +288,26 @@ a {
   font-size: 25px;
   transition: 0.5s;
 }
+
+.titulo {
+  font-size: 50px;
+  font-family: "Nunito Sans", sans-serif;
+
+  color: var(--cafe-bg-color);
+  user-select: none;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.descripcion-seccion {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  user-select: none;
+  max-width: 900px;
+  margin: auto;
+}
+
 
 /* estilos materialize carousel*/
 .carousel {
@@ -624,7 +625,7 @@ h4 {
     margin-bottom: 200px;
   }
 
-  .titulo-seccion{
+  .titulo{
     font-size:30px;
   }
 
@@ -697,23 +698,24 @@ h4 {
     background-image: url(../img/fondo_4.png);
     background-size: cover;
     background-attachment: fixed;
+    padding: 50px;
   }
 
   .testimonios-content {
     width: 100%;
     height: 100%;
-    padding: 200px 0;
+    padding: 5px 0;
     text-align: center;
   }
 
   .testimonios-content h2 {
-    font-size: 50px;
+    font-size: 30px;
     color: black;
     font-weight: bold;
   }
 
   .testimonios-content h3 {
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
   }
 
@@ -722,7 +724,7 @@ h4 {
   h4 {
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 
   }
 
@@ -870,7 +872,7 @@ h4 {
   }
 
   .banner {
-    height: 60vh;
+    height: 70vh;
   }
 
   .banner h2 {
@@ -886,7 +888,8 @@ h4 {
   }
 
   .testimonios {
-    height: 180vh;
+    width: 100%;
+    height: 190vh;
   }
 
   .testimonios-card {
@@ -907,12 +910,9 @@ h4 {
     font-size:30px;
   }
 
-section {
-  width: 100%;
-}
 
 .banner {
-  height: 50vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -931,24 +931,24 @@ section {
 }
 
 .banner-text h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .banner-text p{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 
 }
 
 #section_Recetas{
   width: 100%;
-  height: 52vh;
+  height: 70vh;
 }
 
 #section_Recetas .receta {
   width: 100%;
-  height: 100vh;
-  margin-bottom: 10px;
+  height: 100%;
+  margin-bottom: 5px;
   font-size: 14px;
   text-align: center;
   font-family: "Luckiest Guy", sans-serif;
@@ -959,17 +959,18 @@ section {
 #section_Recetas .receta:hover {
   font-size: 25px;
   transition: 0.5s;
-}
+} 
 
 /* estilos materialize carousel*/
 
-.titulo-seccion{
-  font-size: 30px;
+
+.titulo{
+  font-size: 20px;
   font-weight: bold;
 }
 
 .descripcion-seccion{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -980,7 +981,7 @@ section {
 }
 
 .carousel {
-  margin-top:-100px;
+  margin-top:-30px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -1011,7 +1012,7 @@ section {
   top: 0;
   left: 0;
   height: 100%;
-  min-height: 200px;
+  min-height: 300px;
   position: absolute;
 }
 
@@ -1028,9 +1029,9 @@ section {
 
 
 .carousel .carousel-item>img {
-  width: 200px;
-  height: 200px;
-  padding: 5px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
 }
 
 .carousel .indicators {
@@ -1038,24 +1039,32 @@ section {
   text-align: center;
   left: 0;
   right: 0;
-  bottom:50px;
+  bottom: 1px;
 }
 
 .carousel .indicators .indicator-item {
   margin: 50px 10px;
 }
 
+
 .testimonios {
-  height: 250vh;
+  width: 100%;
+  height: 200vh;
   position: relative;
-  background-image: url(../img/fondo_4.png);
-  background-size: cover;
-  background-attachment: fixed;
+}
+
+.img-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+}
+ .contacto{
+  width: 100%;
 }
 
 .contacto-content{
-  width: 100%;
-  height: 55vh;
+  height: 70vh;
 }
 
 .contacto-content p{
@@ -1067,7 +1076,7 @@ section {
 }
 
 .contacto-img{
-  width: 0px;
-}
+  display: none;
+} 
 
 }
