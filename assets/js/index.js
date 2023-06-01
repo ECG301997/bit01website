@@ -180,7 +180,7 @@ const validations = () => {
     let comentarios = validationComents();
     if (nombre && apellido && correo && telefono && comentarios) {
         console.log(form)
-        printModal(`<img src='../asset/img/registro.png'>`)
+        printModal(`<img src='./assets/images/registro.png'>`)
     }
 }
 // BORRAR LOS DATOS DEL FORMULARIO --- REVISAR SIGUE IMPRIMIENDO EL MODAL LINEA 183

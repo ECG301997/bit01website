@@ -1,6 +1,12 @@
-# Actividad 1: Creación de Landing Page
+# bit00me
+# Página Personal de Eduardo Cadavid Garcia
 
-En esta actividad, vamos a crear una página de aterrizaje o landing page con el objetivo de captar la atención de los visitantes y llevarlos a realizar una acción deseada, como suscribirse a una lista de correo, descargar un recurso, comprar un producto, entre otros.
+¡Bienvenido a mi página personal! Aquí encontrarás información sobre mí y mis intereses.
 
-## Objetivo
-El objetivo de esta actividad es aprender a diseñar y desarrollar una landing page efectiva, centrándonos en los siguientes aspectos:
+## Información
+
+Esta página es una presentación personal donde comparto detalles sobre mi experiencia, habilidades y proyectos en los que he trabajado. Además, podrás conocer mis intereses y pasiones relacionadas con el ámbito tecnológico.
+
+## Autor
+
+Eduardo Cadavid Garcia

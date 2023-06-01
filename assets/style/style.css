@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(251, 251, 251)
+}
+
+
+h1,h2,h3 {
+    font-family: 'Lora', serif;
+}
+
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_navbar {
+    position: relative;
+    height: 0;
+    top: 0;
+}
+
+.label-navbar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+}
+
+.check-menu {
+    display: none;
+}
+
+.navbar {
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.check-menu:checked+.navbar {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 16px 0;
+    transform: translateY(0);
+}
+
+.navbar-text {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar-text:hover {
+    color: green;
+    cursor: pointer;
+}
+
+
+.personal-info {
+    margin-top: -20px;
+    width: 100%;
+    height: 60vh;
+    display: block;
+    background-image: url(../images/fondo_seccion_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.personal-info h1 {
+    font-size: 30px;
+    text-align: start;
+    margin-left: 5px;
+    color: rgb(162, 30, 30);
+}
+
+.personal-info p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.recetas{
+    margin-top: -30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #465c5a;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recetas h2{
+    color: rgb(162, 30, 30);
+    font-size: 30px;
+    text-align: center;
+}
+.recetas h3{
+    justify-content: center;
+}
+
+.recetas-text{
+    width: 100%;
+    font-size:20px;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+}
+
+.recetas-img{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    justify-content: space-around;
+    float: left;
+}
+
+  .contacto {
+    width: 100%;
+    padding-top: 20px;
+    background-color: #ffffff;
+    margin-bottom: -100px;
+  }
+  
+  .contacto-content {
+    height: 70vh;
+    align-items: center;
+  
+  }
+  
+  .contacto-content p {
+    font-size: 10px
+  }
+  
+  .contacto-content h2 {
+    color: rgb(162, 30, 30);
+  }
+  
+  .contacto-content h2,
+  p {
+    text-align: center;
+  }
+  
+  
+  .form-contact {
+    width: 100%;
+    margin-left: 5%;
+  }
+  
+  .form-control {
+    width: 90%;
+    margin-top: 10px;
+  }
+  
+  .contacto-img {
+    display: none;
+    margin: -100%;
+  }
+  
+  .ed-modal-container {
+    background: #000;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    left: 0;
+  }
+  
+  .ed-modal-container::before {
+    content: "X";
+    color: #fff;
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    font-size: 1.5em;
+    opacity: .5;
+    cursor: pointer;
+    z-index: -1;
+  }
+  
+  .ed-modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .ed-modal-content img {
+    width: 100%;
+  }
+
+  
+
+@media screen and (min-width: 768px) {
+
+    .header_navbar {
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        z-index: 1;
+        background-color: rgb(127, 121, 121);
+    }
+
+
+    .label-navbar {
+        display: none;
+    }
+
+
+    .navbar {
+        position: unset;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    .navbar-text{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .personal-info {
+        height: 100vh;
+
+    }
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container h1{
+        font-size: 100px;
+    }
+
+    .personal-info p{
+        margin-top: 100px;
+        font-size:30px;
+    }
+
+    .contacto {
+        width: 100%;
+        padding-top: 20px;
+      }
+      
+      .contacto-content {
+        height: 70vh;
+        align-items: center;
+      
+      }
+      
+      .contacto-content p {
+        font-size: 10px
+      }
+      
+      .contacto-content h2 {
+        color: rgb(162, 30, 30);
+      }
+      
+      .contacto-content h2,
+      p {
+        text-align: center;
+      }
+      
+      
+      .form-contact {
+        width: 100%;
+        margin-left: 5%;
+      }
+      
+      .form-control {
+        width: 90%;
+        margin-top: 10px;
+      }
+      
+      .contacto-img {
+        display: none;
+        margin: -100%;
+      }
+      
+      
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .navbar {
+        justify-content: flex-end;
+        margin-right: 60px;
+    }
+
+    
+  .contacto {
+    height: 100%;
+  }
+
+
+  .contacto-content {
+    width: 100%;
+    height: 130vh;
+    padding: 100px 0;
+    text-align: center;
+    background-color: #7c8c92b7;
+
+  }
+
+  .contacto-content h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  .contacto-content p,
+  .contacto-content h2 {
+    padding: 5px 15px;
+  }
+
+  .contacto-content p {
+    font-size: 20px;
+  }
+
+  .contacto-group {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 0 30px;
+  }
+
+
+  .form-contact {
+    width: 50%;
+    float: left;
+  }
+
+  .form-control {
+    width: 85%;
+    padding: 0.2rem;
+    margin: 0.3rem 0.5rem;
+    display: block;
+    font-size: 1rem;
+    outline: 0;
+    border-radius: 5px;
+    border: 1.5px solid #2f6df3;
+  }
+
+  .send-btn {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #80b827;
+    color: #FFF;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    margin: 0.3rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
+  }
+
+  .contacto-img {
+    margin-top: 10%;
+    width: 50%;
+    float: left;
+  }
+
+  .contacto-img img {
+    margin-left: 80px;
+    width: 50%;
+    display: block;
+  }
+}
